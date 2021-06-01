@@ -17,45 +17,36 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: treeleaf.ai
+  title-url: https://treeleaf.ai/
+  date: Mar 14 2021 - Apr 14 2021
+  subtitle: Front-End Developer 
   tags:
-    - tag: React
+    - tag: Django
+    - tag: Python
+    - tag: HTML
     - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+    - tag: CSS
   timeline-side: right
 
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
-  tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
-  timeline-side: left
-
-- title: Facebook
+- title: Lyceum Model School
   title-url: https://example.com/
   date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  subtitle: Secondary Level Computer Science Teacher, Head of IT Department
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: Computer
+    - tag: Programming
+    - tag: QBasic
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: College of Applied Business
+  title-url: https://www.cab.edu.np/
+  date: 2016 - 2021
+  subtitle: BSc.CSIT
+  timeline-side: left
+
+- title: Bagmati Modern College
+  title-url: https://www.bmcollege.edu.np/bmcollege/en/
+  date: 2013 - 2015
+  subtitle: +2 Computer Science
   timeline-side: left
