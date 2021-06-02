@@ -34,7 +34,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: An Artificial Intelligence, Machine Learning enthusiast | A consistent learner 📝 📈 | Hobby - Basketball 🏀 🎧 💻 🔍
+about_me_description:  ☕☕☕ Drink milk coffee and code 😁 💻
 
 # SKILLS SECTION
 # show_skills_card:
@@ -53,7 +53,7 @@ show_timeline_card: true
 timeline_title: Education & Experience
 # cv_download_link: The link where you host your cv.
 # > e.g. you share your cv on your dropbox, then add the dropbox link here
-cv_download_link: https://drive.google.com/uc?export=download&id=1vJGEdk7rN8dOzFSMXwI81uW7Ek6C8Fvp
+cv_download_link: https://drive.google.com/uc?export=download&id=1d4eoVEntQHYmhDhyktXBN6B1a8BHG9xy
 
 # PROJECTS SECTION
 # show_projects_card:
