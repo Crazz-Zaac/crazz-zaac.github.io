@@ -13,6 +13,21 @@
 #     - tag: AngularJS
 #     - tag: Node
 
+- name: Investigating Netflix Movies and Guest Stars in The Office
+  descr: "In this part of my practise the following hypothesis were performed.
+           Visual inspection of data
+           Filtering movies
+           Comparative analysis of year of release vs number of movies
+           Comparative analysis of movie duration vs year of release"
+  demo: https://github.com/Crazz-Zaac/Investigating-netflix-movies
+  tags:
+    - tag: Python
+    - tag: matplotlib
+    - tag: datascience
+    - tag: data
+    - tag: netflix
+    - tag: datacamp
+
 - name: neural-style-transfer-coursera-deep-learning
   descr: "A pretrained Deep CNN called VGG Network was used to train the neral net. To be even more precise, a VGG-19, a 19-layer version of the VGG network."
   demo: https://crazz-zaac.github.io/blog/art-generation-with-neural-style-transfer/
