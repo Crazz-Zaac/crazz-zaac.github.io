@@ -8,6 +8,12 @@
 - name: Python
   weight: 5
 
+- name: GraphQL
+  weight: 3
+
+- name: Clojure
+  weight: 2
+
 - name: JavaScript
   weight: 2
 
