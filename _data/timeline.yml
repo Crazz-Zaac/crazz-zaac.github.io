@@ -52,12 +52,18 @@
 
 - title: College of Applied Business
   title-url: https://www.cab.edu.np/
-  date: 2016 - 2021
-  subtitle: BSc.CSIT
+  date: 2016 - 2020
+  subtitle: Bachelors of Science Computer Science and Information Technology
   timeline-side: left
 
 - title: Bagmati Modern College
   title-url: https://www.bmcollege.edu.np/bmcollege/en/
   date: 2013 - 2015
-  subtitle: +2 Computer Science
+  subtitle: +2 Computer Science ()
+  timeline-side: left
+
+- title: Lyceum Model School
+  title-url: https://www.bmcollege.edu.np/bmcollege/en/
+  date: 2002 - 2012
+  subtitle: District Level Examination (Distinction), School Leaving Certificate (Distinction)
   timeline-side: left
