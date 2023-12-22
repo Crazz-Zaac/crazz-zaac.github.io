@@ -8,11 +8,14 @@
 - name: Git
   weight: 5
 
-- name: Bash
-  weight: 3
+- name: Linux
+  weight: 4
 
 - name: VS Code
-  weight: 3
+  weight: 4
 
-- name: Postman
+- name: Anaconda
+  weight: 5
+
+- name: LaTeX
   weight: 4
