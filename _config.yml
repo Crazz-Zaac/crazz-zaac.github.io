@@ -112,6 +112,12 @@ projects:
     - Django_project
     - imdb-dataset
     - Old-Diaries
+    - dss_homework
+    - dss_ex
+    - ielts
+    - DSS_Skills
+    - IELTS-materials
+    - the-coding-pirate
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
