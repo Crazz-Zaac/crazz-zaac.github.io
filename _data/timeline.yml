@@ -17,6 +17,17 @@
 #     - tag: Rails
 #   timeline-side: right
 
+- title: Forschungszentrum Jülich
+  title-url: https://www.fz-juelich.de/en
+  date: May 15 2024 - Present
+  subtitle: Data Analyst, HiWi 
+  tags:
+    - tag: MySQL
+    - tag: Python
+    - tag: Bash Scripting
+    - tag: Jupyter Notebook
+  timeline-side: right
+
 - title: Wiseyak Solution, Pvt Ltd.
   title-url: https://wiseyak.com
   date: Jul 22 2021 - Oct 22 2021
