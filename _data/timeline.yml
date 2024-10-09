@@ -51,16 +51,6 @@
     - tag: CSS
   timeline-side: right
 
-- title: Lyceum Model School
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Secondary Level Computer Science Teacher, Head of IT Department
-  tags:
-    - tag: Computer
-    - tag: Programming
-    - tag: QBasic
-  timeline-side: right
-
 - title: Friedrich-Alexander-Universität (FAU) 
   title-url: https://www.fau.de/
   date: May 2023 - Present
