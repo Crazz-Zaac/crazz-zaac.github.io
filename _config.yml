@@ -122,6 +122,8 @@ projects:
     - iwrite
     - Quest_World
     - Decision-Tree-Algo
+    - mathematical-image-processing
+    - python-bioinformatics
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics
