@@ -37,6 +37,7 @@
     - tag: tensorflow
     - tag: ConvNet
     - tag: machine learning
+    - tag: coursera
 
 - name: face-recognition-coursera-deep-learning
   descr: "A pre-trained model was used to represent a ConvNet activations using a 'channels first' convention."
@@ -46,6 +47,7 @@
     - tag: keras
     - tag: tensorflow
     - tag: ConvNet
+    - tag: coursera
 
 - name: happiness-detection
   descr: "This project is based on Supervised learning. The dataset used is already labelled as smiling or not smiling. A total of 600 images were used for training and 150 images as test dataset."
@@ -53,6 +55,7 @@
   tags:
     - tag: Python
     - tag: keras
+    - tag: coursera
 
 - name: Voice-to-letter-in-Nepali-web-app
   descr: "A simple web app for Voice to letter in Nepal using Streamlit"
