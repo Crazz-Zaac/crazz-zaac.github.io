@@ -19,3 +19,6 @@
 
 - name: LaTeX
   weight: 3
+
+- name: Bash Scripting
+  weight: 3

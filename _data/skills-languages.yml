@@ -8,19 +8,16 @@
 - name: Python
   weight: 5
 
-- name: Pandas and numpy library
+- name: Pandas and Numpy 
   weight: 4
 
-- name: Seaborn library
+- name: Seaborn 
   weight: 4
 
 - name: Data Visualization
   weight: 5
 
 - name: Pyplot
-  weight: 4
-
-- name: Pandas library
   weight: 4
 
 - name: GraphQL
@@ -30,12 +27,12 @@
   weight: 2
 
 - name: JavaScript (JS)
-  weight: 3
+  weight: 2
 
-- name: HTML5
+- name: MySQL
   weight: 4
 
-- name: CSS3
+- name: Python Notebook
   weight: 3
 
 - name: C++
