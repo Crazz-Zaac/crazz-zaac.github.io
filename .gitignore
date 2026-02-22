@@ -9,6 +9,10 @@ __v0_jsx-dev-runtime.ts
 # Common ignores
 node_modules/
 .next/
+out/
 .env
 .DS_Store
+
+# Generated at build time
+public/pinned-repos.json
 

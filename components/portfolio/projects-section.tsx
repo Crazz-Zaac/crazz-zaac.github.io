@@ -29,7 +29,8 @@ export function ProjectsSection() {
   useEffect(() => {
     async function fetchPinned() {
       try {
-        const res = await fetch("/api/github/pinned")
+        // Fetch pre-built pinned repos data (generated at build time by CI)
+        const res = await fetch("/pinned-repos.json")
         if (!res.ok) throw new Error("Failed to fetch")
         const data = await res.json()
         if (Array.isArray(data)) {
