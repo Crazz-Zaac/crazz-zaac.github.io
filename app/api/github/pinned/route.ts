@@ -34,11 +34,11 @@ const query = `
 `
 
 export async function GET() {
-  const token = process.env.GITHUB_TOKEN
+  const token = process.env.ACCESS_TOKEN
 
   if (!token) {
     return NextResponse.json(
-      { error: "GITHUB_TOKEN not configured" },
+      { error: "ACCESS_TOKEN not configured" },
       { status: 500 }
     )
   }
