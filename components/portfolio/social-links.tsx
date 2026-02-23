@@ -1,5 +1,6 @@
-import { Linkedin, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { GithubIcon } from "@/components/icons/github-icon"
+import { LinkedinIcon } from "@/components/icons/linkedin-icon"
 
 const LINKS = [
   {
@@ -9,8 +10,8 @@ const LINKS = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/rabin-bishwokarma",
-    icon: Linkedin,
+    href: "https://www.linkedin.com/in/rabinbk/",
+    icon: LinkedinIcon,
   },
   {
     label: "Email",

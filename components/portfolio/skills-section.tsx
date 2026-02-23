@@ -11,7 +11,7 @@ const SKILL_GROUPS = [
   },
   {
     category: "Web & Backend",
-    items: ["Django", "FastAPI", "GraphQL", "Pydantic", "SQLAlchemy", "SQLModel", "Alembic", "Streamlit", "HTML", "CSS"],
+    items: ["Django", "FastAPI", "Pydantic", "SQLAlchemy", "SQLModel", "Alembic", "Streamlit", "HTML", "CSS"],
   },
   {
     category: "Tools",

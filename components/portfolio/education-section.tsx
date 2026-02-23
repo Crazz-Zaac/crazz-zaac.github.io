@@ -7,7 +7,7 @@ interface EducationItem {
 
 const EDUCATION: EducationItem[] = [
   {
-    period: "May 2023 — Present",
+    period: "April 2023 — Present",
     degree: "MSc. Data Science",
     institution: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
     institutionUrl: "https://www.fau.eu/",
@@ -16,11 +16,13 @@ const EDUCATION: EducationItem[] = [
     period: "2016 — 2020",
     degree: "BSc. Computer Science and Information Technology",
     institution: "College of Applied Business, Tribhuvan University",
+    institutionUrl: "https://www.cab.edu.np/",
   },
   {
     period: "2013 — 2015",
     degree: "+2 Computer Science",
     institution: "Bagmati Modern College",
+    institutionUrl: "https://bagmaticollege.edu.np/",
   },
 ]
 
