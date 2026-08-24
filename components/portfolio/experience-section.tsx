@@ -16,7 +16,7 @@ const EXPERIENCES: ExperienceItem[] = [
     company: "Primetals Technologies",
     companyUrl: "https://www.primetals.com/",
     description:
-      "Applying AI and machine learning techniques for industrial data analytics. Working with large-scale datasets using Python to derive actionable insights and improve operational processes.",
+      "Applying AI and machine learning techniques to industrial data analytics. Working with large-scale datasets in Python to support insight generation, process understanding, and operational improvement.",
     skills: ["Python", "AI/ML", "Data Analysis", "Pandas"],
   },
   {
@@ -25,7 +25,7 @@ const EXPERIENCES: ExperienceItem[] = [
     company: "Forschungszentrum Jülich",
     companyUrl: "https://www.fz-juelich.de/en",
     description:
-      "Performed data analysis tasks using MySQL, Python, and Bash scripting. Worked with Jupyter Notebooks to process, visualize, and draw insights from scientific research data.",
+      "Analyzed scientific research data using MySQL, Python, Bash, and Jupyter Notebooks. Built reproducible workflows for processing, visualization, and exploratory analysis.",
     skills: ["MySQL", "Python", "Bash Scripting", "Jupyter Notebook"],
   },
   {
@@ -49,24 +49,13 @@ const EXPERIENCES: ExperienceItem[] = [
 export function ExperienceSection() {
   return (
     <section id="experience" className="scroll-mt-24" aria-label="Work experience">
-      <h2 className="lg:hidden text-sm font-semibold tracking-widest text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
+      <h2 className="lg:hidden text-sm font-semibold tracking-normal text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
         Experience
       </h2>
       <div className="flex flex-col gap-12">
         {EXPERIENCES.map((exp) => (
           <ExperienceCard key={`${exp.company}-${exp.period}`} {...exp} />
         ))}
-      </div>
-      <div className="mt-12">
-        <a
-          href="/rabin-bk-cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex items-center gap-1 text-foreground font-semibold leading-tight hover:text-primary transition-colors duration-200"
-        >
-          View Full Resume
-          <ArrowUpRight className="size-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </a>
       </div>
     </section>
   )
@@ -81,7 +70,7 @@ function ExperienceCard({
   skills,
 }: ExperienceItem) {
   return (
-    <div className="group relative flex flex-col lg:flex-row gap-4 lg:gap-6 rounded-lg p-4 -mx-4 transition-all duration-300 hover:bg-card/60 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
+    <div className="group relative flex flex-col lg:flex-row gap-4 lg:gap-6 rounded-md p-4 -mx-4 transition-all duration-300 hover:bg-secondary/45 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]">
       <header className="shrink-0 text-xs font-semibold tracking-wide text-muted-foreground uppercase lg:w-32 lg:pt-1">
         {period}
       </header>
@@ -107,7 +96,7 @@ function ExperienceCard({
           {skills.map((skill) => (
             <li
               key={skill}
-              className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+              className="rounded-md bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
             >
               {skill}
             </li>

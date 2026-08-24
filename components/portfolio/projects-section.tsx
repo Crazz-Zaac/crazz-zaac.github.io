@@ -15,10 +15,26 @@ interface PinnedRepo {
   topics: string[]
 }
 
+const FEATURED_PROJECTS: PinnedRepo[] = [
+  {
+    name: "llm-driven-clinical-study-analysis",
+    description:
+      "LLM-driven analysis workflow for clinical study data, focused on extracting insights from medical research context and supporting reproducible study review.",
+    url: "https://github.com/Crazz-Zaac/llm-driven-clinical-study-analysis",
+    homepageUrl: "",
+    stars: 0,
+    forks: 0,
+    language: { name: "Python", color: "#3572A5" },
+    topics: ["llm", "clinical-research", "data-analysis", "machine-learning", "healthcare-ai"],
+  },
+]
+
 function formatRepoName(name: string): string {
   return name
     .replace(/[-_]/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bLlm\b/g, "LLM")
+    .replace(/\bAi\b/g, "AI")
 }
 
 export function ProjectsSection() {
@@ -49,14 +65,14 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" className="scroll-mt-24" aria-label="Pinned projects">
-      <h2 className="lg:hidden text-sm font-semibold tracking-widest text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
+      <h2 className="lg:hidden text-sm font-semibold tracking-normal text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
         Projects
       </h2>
 
       {loading ? (
         <div className="flex flex-col gap-6">
           {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="rounded-lg border border-border bg-card p-5 animate-pulse">
+            <div key={i} className="rounded-md border border-border bg-card p-5 animate-pulse">
               <div className="h-4 w-1/3 bg-muted rounded mb-3" />
               <div className="h-3 w-full bg-muted rounded mb-2" />
               <div className="h-3 w-2/3 bg-muted rounded mb-4" />
@@ -68,7 +84,7 @@ export function ProjectsSection() {
           ))}
         </div>
       ) : error ? (
-        <div className="rounded-lg border border-border bg-card/40 p-6 text-sm text-muted-foreground">
+        <div className="rounded-md border border-border bg-card/40 p-6 text-sm text-muted-foreground">
           <div className="flex flex-col items-center gap-4 py-6 text-center">
             <GithubIcon className="size-10 text-muted-foreground/50" />
             <div className="flex flex-col gap-1.5">
@@ -91,7 +107,7 @@ export function ProjectsSection() {
         </div>
       ) : (
         <div className="flex flex-col gap-4">
-          {repos.map((repo) => (
+          {mergeFeaturedRepos(repos).map((repo) => (
             <PinnedRepoCard key={repo.name} repo={repo} />
           ))}
         </div>
@@ -112,9 +128,17 @@ export function ProjectsSection() {
   )
 }
 
+function mergeFeaturedRepos(repos: PinnedRepo[]): PinnedRepo[] {
+  const featuredNames = new Set(FEATURED_PROJECTS.map((repo) => repo.name))
+  return [
+    ...FEATURED_PROJECTS,
+    ...repos.filter((repo) => !featuredNames.has(repo.name)),
+  ].slice(0, 6)
+}
+
 function PinnedRepoCard({ repo }: { repo: PinnedRepo }) {
   return (
-    <div className="group relative flex flex-col gap-3 rounded-lg border border-border bg-card/40 p-5 transition-all duration-300 hover:bg-card/80 hover:border-primary/30">
+    <div className="group relative flex flex-col gap-3 rounded-md border border-border/80 bg-background/35 p-5 transition-all duration-300 hover:bg-secondary/45 hover:border-primary/30">
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-foreground font-medium leading-snug">
           {formatRepoName(repo.name)}
@@ -180,7 +204,7 @@ function PinnedRepoCard({ repo }: { repo: PinnedRepo }) {
           {repo.topics.map((topic) => (
             <li
               key={topic}
-              className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
+              className="rounded-md bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
             >
               {topic}
             </li>

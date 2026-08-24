@@ -15,9 +15,9 @@ const _jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Rabin Bishwokarma | Portfolio',
+  title: 'Rabin BK | Portfolio',
   description:
-    'Portfolio of Rabin Bishwokarma - MSc Data Science student, AI/ML enthusiast, and software developer based in Erlangen, Germany.',
+    'Portfolio of Rabin BK - MSc Data Science student focused on applied machine learning, data analytics, and research-driven software.',
   icons: {
     icon: '/favicon.svg',
   },
@@ -40,7 +40,7 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}

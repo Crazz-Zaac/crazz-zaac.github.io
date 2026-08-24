@@ -29,7 +29,7 @@ const EDUCATION: EducationItem[] = [
 export function EducationSection() {
   return (
     <section id="education" className="scroll-mt-24" aria-label="Education">
-      <h2 className="lg:hidden text-sm font-semibold tracking-widest text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
+      <h2 className="lg:hidden text-sm font-semibold tracking-normal text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
         Education
       </h2>
       <div className="flex flex-col gap-10">
@@ -48,7 +48,7 @@ function EducationCard({
   institutionUrl,
 }: EducationItem) {
   return (
-    <div className="group relative flex flex-col lg:flex-row gap-4 lg:gap-6 rounded-lg p-4 -mx-4 transition-all duration-300 hover:bg-card/60 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
+    <div className="group relative flex flex-col lg:flex-row gap-4 lg:gap-6 rounded-md p-4 -mx-4 transition-all duration-300 hover:bg-secondary/45 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]">
       <header className="shrink-0 text-xs font-semibold tracking-wide text-muted-foreground uppercase lg:w-32 lg:pt-1">
         {period}
       </header>

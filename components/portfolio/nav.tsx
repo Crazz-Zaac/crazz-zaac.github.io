@@ -50,7 +50,7 @@ export function Nav() {
               }`}
             />
             <span
-              className={`text-xs font-semibold tracking-widest transition-colors duration-300 ${
+              className={`text-xs font-semibold tracking-normal transition-colors duration-300 ${
                 isActive ? "text-foreground" : "text-muted-foreground group-hover:text-foreground"
               }`}
             >

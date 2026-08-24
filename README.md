@@ -1,6 +1,5 @@
-(This site is generated using [flexible-jekyll](https://jekyllthemes.io/theme/flexible-jekyll) theme.)
-<h1 align="center">Hi 👋, I'm <a href = "https://www.linkedin.com/in/rabin-bishwokarma/">Rabin Bishwokarma</a>(Crazz Zaac)</h1>
-<h3 align="center">A Machine Learning enthusiast and learner</h3>
+<h1 align="center">Hi, I'm <a href="https://www.linkedin.com/in/rabinbk/">Rabin BK</a> (Crazz Zaac)</h1>
+<h3 align="center">MSc Data Science student focused on applied machine learning and data analytics</h3>
 
 - 🔭 I’m currently working on **Audio Classification and Recognition**
 

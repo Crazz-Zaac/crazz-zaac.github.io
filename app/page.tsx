@@ -11,7 +11,7 @@ import { ThemeToggle } from "@/components/portfolio/theme-toggle"
 
 function SectionCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={`rounded-xl border border-border bg-card/50 p-6 backdrop-blur-sm ${className}`}>
+    <div className={`rounded-lg border border-border/80 bg-card/70 p-6 shadow-sm shadow-foreground/5 backdrop-blur-sm transition-colors duration-300 hover:border-primary/25 ${className}`}>
       {children}
     </div>
   )
@@ -23,10 +23,10 @@ export default function Home() {
       <SpotlightCursor />
       <ThemeToggle />
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <div className="lg:flex lg:justify-between lg:gap-4">
+        <div className="lg:flex lg:justify-between lg:gap-10">
           <Sidebar />
-          <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
-            <div className="flex flex-col gap-16 lg:gap-20">
+          <main id="content" className="pt-24 lg:w-[54%] lg:py-24">
+            <div className="flex flex-col gap-10 lg:gap-12">
               <SectionCard>
                 <AboutSection />
               </SectionCard>
@@ -38,7 +38,7 @@ export default function Home() {
               </SectionCard>
               <SectionCard>
                 <section id="skills" className="scroll-mt-24" aria-label="Skills">
-                  <h2 className="lg:hidden text-sm font-semibold tracking-widest text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
+                  <h2 className="lg:hidden text-sm font-semibold tracking-normal text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
                     Skills & Technologies
                   </h2>
                   <SkillsGrid />
@@ -49,7 +49,7 @@ export default function Home() {
               </SectionCard>
               <SectionCard>
                 <section id="github" className="scroll-mt-24" aria-label="GitHub Activity">
-                  <h2 className="lg:hidden text-sm font-semibold tracking-widest text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
+                  <h2 className="lg:hidden text-sm font-semibold tracking-normal text-foreground uppercase mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6">
                     GitHub Activity
                   </h2>
                   <GitHubContributions />
